@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ToDoList</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <meta name="description" content="Author: A.N. Author,
+        Illustrator: P. Picture, Category: Books, Price: $17.99,
+        Length: 784 pages">
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <h1>Lista zadań</h1>
+        </header>
+        <section class="container">
+            <section class="section">
+                <h2 class="section--underscore">Dodaj nowe zadanie</h2>
+                <div class="section__input">
+                    <input type="text" class="input" placeholder="Co jest do zrobienia?">
+                    <button class="button">Dodaj zadanie</button>
+                </div>
+            </section>
+            <section class="section">
+                <div class="section__addit section--underscore">
+                    <h2>Lista zadań</h2>
+                    <div class="buttons">
+                        <button class="hideDone">Ukryj ukończone</button>
+                        <button class="markAllAsDone">Ukończ wszystkie</button>
+                    </div>
+                </div>
+                <ol class="itemsList"></ol>
+            </section>
+        </section>
+    </body>
+</html>
