@@ -1,12 +1,7 @@
 const input = document.querySelector('.input');
 const subButton = document.querySelector('.button');
 
-let tasks = [
-    {
-        task: "omlet",
-        done: false,
-    },
-];
+let tasks = [];
 
 
 const markAsDoneBtn = document.querySelector('.markAllAsDone');
