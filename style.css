@@ -16,7 +16,9 @@ body {
     align-items: center;
     background-color: rgba(152, 212, 238, 0.63);
 }
-
+.body,.body .section, body .input{
+    transition: background 1s;
+}
 .header {
     width: 60vw;
     margin-top: 100px;
@@ -109,11 +111,11 @@ ol li span p{
     height: 45px;
     border: none;
     font-size: 20px;
-    transition: background 0.5s;
+    transform: background 0.1s;
 }
 
 .js-delButton {
-    background-color: red;
+    background-color: rgb(175, 64, 64);
 
 }
 .js-delButton:hover {
@@ -122,7 +124,7 @@ ol li span p{
 }
 
 .js-doneButton {
-    background-color: green;
+    background-color: rgba(39, 141, 39, 0.993);
 
 }
 .js-doneButton:hover {
@@ -152,14 +154,35 @@ ol li span p{
     color: rgb(13, 98, 90);
     
 }
-.disabledButton{
-    color : rgba(110, 110, 110, 0.822);
-
+.disabledButton:disabled{
+   color: rgba(128, 128, 128, 0.281);
 }
 .disabledButton:hover{
     cursor: default;
     text-decoration: none;
     color: rgba(255, 0, 0, 0.363);
+}
+.body--darkMode{
+    background-color: rgb(27, 26, 26);
+}
+.section--darkMode{
+    background-color: rgb(60, 61, 61);
+}
+.section--darkMode h2, .header--darkMode{
+    color: rgba(207, 101, 101, 0.966);
+}
+.button--darkMode{
+    background-color: cadetblue;
+}
+.buttons--darkMode *{
+    color: cadetblue;
+}
+.input--darkMode{
+    background-color: rgba(161, 160, 160, 0.746);
+    border: 1px solid black;
+}
+.input--darkMode::placeholder{
+    color: rgb(8, 8, 8);
 }
 @media(max-width: 767px) {
 
